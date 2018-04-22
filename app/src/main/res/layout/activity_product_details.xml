@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:context=".listingdetails.ProductDetailsActivity"
+    android:padding="16dp"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/imgLarge"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="120dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/img_loading"
+            android:layout_marginBottom="5dp"/>
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:gravity="left"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:textColor="#000"
+            android:text="fetching name..."
+            android:textSize="13dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvsuburb"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:gravity="left"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:textColor="#000"
+            android:text="fetching city..."
+            android:textSize="13dp"
+            android:textStyle="bold" />
+
+
+        <LinearLayout
+            android:id="@+id/llPrice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="5dp"
+            android:weightSum="1">
+
+            <TextView
+
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:gravity="left"
+                android:textColor="#000"
+                android:text="Start price"
+                android:textSize="13dp"
+                android:textStyle="bold"
+                android:layout_weight="0.5"/>
+
+            <TextView
+                android:id="@+id/tvstartprice"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:gravity="left"
+                android:textColor="#000"
+                android:textSize="13dp"
+                android:textStyle="normal"
+                android:layout_weight="0.5"/>
+
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/llBuy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="5dp"
+            android:weightSum="1">
+
+            <TextView
+
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:gravity="left"
+                android:textColor="#000"
+                android:text="Buy now price"
+                android:textSize="13dp"
+                android:textStyle="bold"
+                android:layout_weight="0.5"/>
+
+            <TextView
+                android:id="@+id/tvbuynow"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:gravity="left"
+                android:textColor="#000"
+                android:textSize="13dp"
+                android:textStyle="normal"
+                android:layout_weight="0.5"/>
+
+
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:gravity="left"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:textColor="#000"
+            android:textSize="13dp"
+            android:textStyle="normal" />
+
+        <LinearLayout
+            android:id="@+id/llPayment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <TextView
+
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:gravity="left"
+                android:textColor="#000"
+                android:text="Payment options"
+                android:textSize="13dp"
+                android:textStyle="bold"
+                android:layout_weight="0.5"/>
+
+            <TextView
+                android:id="@+id/tvpayopt"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:gravity="left"
+                android:textColor="#000"
+                android:textSize="13dp"
+                android:textStyle="normal"
+                android:layout_weight="0.5"/>
+
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+
+
+
+
+</android.support.v4.widget.NestedScrollView>
